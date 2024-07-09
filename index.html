@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Discos</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="JS/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Loja de Discos</h1>
+            <a href="#loja">Sobre</a>
+            <a href="#discos" id="disco">Discos</a>
+        </div>
+    </header>
+        <div class="container">
+            <section id="loja">
+                <div class="fachada-grid">
+                    <main>
+                        <div id="carousel-loja">
+                            <img src="Imagens/loja-2.jpg">
+                            <img src="Imagens/loja-3.jpg">
+                            <img src="Imagens/loja-4.jpg">
+                        </div>
+                    </main>
+                    <div class="container-flex">
+                        <aside  id="Sobre">
+                                <h2>Sobre a Loja</h2>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur accusamus harum odio sed dolorem optio eius, reprehenderit aperiam sit error blanditiis earum inventore veniam fugiat, officiis corporis. Sint, amet impedit?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis, ex earum sint ratione molestiae ea provident officiis facilis magnam at dignissimos alias et incidunt quibusdam? Voluptatibus consequatur animi facilis Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus ipsum dolores reiciendis nemo quis temporibus atque repellat id commodi laborum quisquam omnis suscipit sunt quia modi reprehenderit dolor, rem similique!
+                            </p>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <section id="discos">
+                    <h2>Discos Disponíveis na loja</h2>
+                    <div class="discos-grid">
+                        <ul id="DiscosDaLoja">
+                            <li>
+                                <img src="Imagens/disco-1.png">
+                                <h3>Black Sabbath - Paranoid</h3>
+                                <div class="price">
+                                    <strong>R$137,90</strong>
+                                </div>
+                                <button type="button">Comprar</button>
+                            </li>
+                            <li>
+                                <img src="imagens/disco-2.png">
+                                <h3>Ophthalamia - Via Dolorosa</h3>
+                                <div class="price">
+                                    <strong>R$124,70</strong>
+                                </div>
+                                <button type="button">Comprar</button>
+                            </li>
+                            <li>
+                                <img src="Imagens/disco-3.png">
+                                <h3>Megadeth - Rust In Peace</h3>
+                                <div class="price">
+                                    <strong>R$114,00</strong>
+                                </div>
+                                <button type="button">Comprar</button>
+                            </li>
+                            <li>
+                                <img src="Imagens/disco-6.png">
+                                <h3>Death - Spiritual Healing</h3>
+                                <div class="price">
+                                    <strong>R$125,90</strong>
+                                </div>
+                                <button type="button">Comprar</button>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+        </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('#carousel-loja').slick({
+        autoplay: true
+    })
+})
+    </script>
+    <footer>
+        <p>
+            2024 &copy; Loja de Discos - Todos os direitos reservados
+        </p>
+    </footer>
+</body>
+</html>

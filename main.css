@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 90%;
+    padding-top: 24px;
+    margin-left: 24px;
+}
+
+header h1 {
+    padding-bottom: 12px;
+}
+
+header {
+    background-color: rgb(0, 60, 112);
+    color: #fff;
+    padding-top: 16px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 8px;
+}
+
+#carousel-loja {
+    width: 600px;
+}
+
+#loja {
+    margin-bottom: 36px;
+}
+
+.fachada-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 32.5%);
+    grid-gap: 35%;
+}
+
+aside h2 {
+    border-bottom: 2px solid #747474;
+    margin-bottom: 24px;
+}
+
+#DiscosDaLoja {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-gap: 4%;
+}
+
+#discos h2 {
+    border-bottom: 2px solid #747474;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+ul li img {
+    width: 100%;
+}
+
+ul > li {
+    list-style: none;
+    width: 100%;
+}
+
+button {
+    color: #fff;
+    border: none;
+    background-color: rgb(0, 60, 112);
+    padding: 12px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+footer {
+    color: #fff;
+    background-color: rgb(0, 60, 112);
+    padding: 24px;
+    margin-top: 26px;
+}
+
+@media  screen and (max-width: 1023px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        margin-left: 3px;
+    }
+
+    .fachada-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 32.5%);
+        grid-gap: 35%;
+    }
+
+    #DiscosDaLoja {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+        grid-gap: 2%;
+    }
+
+    ul li img {
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 640px) {
+    .fachada-grid {
+        display: block;
+    }
+
+    #carousel-loja {
+        margin-bottom: 12px;
+    }
+
+    #DiscosDaLoja {
+        display: block;
+    }
+
+    ul li img {
+        width: 95%;
+    }
+
+    ul li {
+        margin-bottom: 26px;
+    }
+
+    button {
+        padding: 24px;
+        margin-left: 190px;
+    }
+}
